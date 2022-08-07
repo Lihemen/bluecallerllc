@@ -1,0 +1,25 @@
+.mobile__menu {
+  display: block;
+  background-color: rgb(49, 48, 48);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 999;
+  line-height: 3;
+  padding: 2rem;
+  transition: all 0.2s ease-in;
+  transform: translateX(-100%);
+}
+
+.mobile__menu.active {
+  transform: translateX(0%);
+}
+
+#close {
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+}
+
