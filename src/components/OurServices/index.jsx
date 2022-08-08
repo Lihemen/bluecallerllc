@@ -26,7 +26,7 @@ export const OurServices = () => {
               Exercitationem, facilis.
             </p>
 
-            <Link to="services#web-development">Read More</Link>
+            <Link to="/services/web-development">Read More</Link>
           </div>
           <div className="card">
             <span className="icon">
@@ -38,7 +38,7 @@ export const OurServices = () => {
               Exercitationem, facilis.
             </p>
 
-            <Link to="services#seo-marketing">Read More</Link>
+            <Link to="/services/seo-marketing">Read More</Link>
           </div>
           <div className="card">
             <span className="icon">
@@ -50,7 +50,7 @@ export const OurServices = () => {
               Exercitationem, facilis.
             </p>
 
-            <Link to="services#app-development">Read More</Link>
+            <Link to="/services/app-development">Read More</Link>
           </div>
           <div className="card">
             <span className="icon">
@@ -62,7 +62,7 @@ export const OurServices = () => {
               Exercitationem, facilis.
             </p>
 
-            <Link to="services#digital-marketing">Read More</Link>
+            <Link to="/services/digital-marketing">Read More</Link>
           </div>
           <div className="card">
             <span className="icon">
@@ -74,7 +74,7 @@ export const OurServices = () => {
               Exercitationem, facilis.
             </p>
 
-            <Link to="services#social-media">Read More</Link>
+            <Link to="/services/social-media">Read More</Link>
           </div>
           <div className="card">
             <span className="icon">
@@ -86,7 +86,7 @@ export const OurServices = () => {
               Exercitationem, facilis.
             </p>
 
-            <Link to="services#product-design">Read More</Link>
+            <Link to="/services/product-design">Read More</Link>
           </div>
         </Rotate>
       </div>

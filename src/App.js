@@ -13,7 +13,14 @@ import { Projects } from "./pages/Projects";
 
 import { FAQs } from "./pages/Company/FAQs";
 import { Careers } from "./pages/Company/Careers";
-import { Team } from "./pages/Company/Team";
+
+// Single Services
+import { WebDev } from "./pages/Services/WebDev";
+import { SocialMedia } from "./pages/Services/SocialMedia";
+import { SEOMarketing } from "./pages/Services/SEOMarketing";
+import { ProductDesign } from "./pages/Services/ProductDesign";
+import { MobileDev } from "./pages/Services/MobileDev";
+import { DigitalMarketing } from "./pages/Services/DigitalMarketing";
 
 function App() {
   const { pathname, search } = useLocation();
@@ -38,19 +45,18 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="services">
           <Route index element={<Services />} />
-          <Route path="web-development" />
-          <Route path="social-media" />
-          <Route path="seo-marketing" />
-          <Route path="app-development" />
-          <Route path="digital-marketing" />
-          <Route path="product-design" />
+          <Route path="web-development" element={<WebDev />} />
+          <Route path="social-media" element={<SocialMedia />} />
+          <Route path="seo-marketing" element={<SEOMarketing />} />
+          <Route path="app-development" element={<MobileDev />} />
+          <Route path="digital-marketing" element={<DigitalMarketing />} />
+          <Route path="product-design" element={<ProductDesign />} />
         </Route>
         <Route path="pages/not-found" element={<NotFound />} />
         <Route path="projects" element={<Projects />} />
         <Route path="company">
           <Route path="faqs" element={<FAQs />} />
           <Route path="careers" element={<Careers />} />
-          <Route path="our-team" element={<Team />} />
         </Route>
         <Route path="*" element={<Navigate to="/pages/not-found" replace />} />
       </Routes>

@@ -111,3 +111,7 @@ h6 {
   padding-left: 4rem;
 }
 
+.text-danger {
+  color: rgb(235, 83, 83);
+}
+
