@@ -14,7 +14,7 @@ export const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <img src={logo} alt="Logo" width={32} height={32} />
-          <NavLink to="/">BLUECALLER </NavLink>
+          <NavLink to="/">BlueCaller </NavLink>
         </div>
         <ul className="nav__links">
           <li>
@@ -27,7 +27,7 @@ export const Navbar = () => {
             <NavLink to="/services">Services</NavLink>
           </li>
           <li>
-            <NavLink to="/our-team">Team</NavLink>
+            <NavLink to="/company/our-team">Team</NavLink>
           </li>
           <li>
             <NavLink to="/projects">Projects</NavLink>

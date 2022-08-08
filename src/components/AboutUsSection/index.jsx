@@ -16,7 +16,7 @@ import "./aboutussection.css";
 
 export const AboutUsSection = () => {
   return (
-    <section class="about__hero">
+    <section className="about__hero">
       <JackInTheBox triggerOnce delay={200}>
         <div className="image__container">
           <img src={teamtogether} alt="team holding hands together" />

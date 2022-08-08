@@ -1,0 +1,39 @@
+.single__page__header {
+  padding: 8rem 0;
+  margin-bottom: 4rem;
+  text-align: center;
+  border-bottom: 1px solid #b0b1b3;
+}
+
+.single__page__header h2 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.single__page__header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+.single__page__header ul li:not(:first-child) ::before {
+  content: "\2022";
+  color: #ffff77;
+  padding: 0 20px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+@media (max-width: 800px) {
+  .single__page__header {
+    padding: 6rem 0;
+  }
+  .single__page__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
