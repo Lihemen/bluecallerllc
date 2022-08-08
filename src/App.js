@@ -9,6 +9,11 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Services } from "./pages/Services";
 import { NotFound } from "./pages/NotFound";
+import { Projects } from "./pages/Projects";
+
+import { FAQs } from "./pages/Company/FAQs";
+import { Careers } from "./pages/Company/Careers";
+import { Team } from "./pages/Company/Team";
 
 function App() {
   const { pathname, search } = useLocation();
@@ -31,8 +36,22 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="services" element={<Services />} />
+        <Route path="services">
+          <Route index element={<Services />} />
+          <Route path="web-development" />
+          <Route path="social-media" />
+          <Route path="seo-marketing" />
+          <Route path="app-development" />
+          <Route path="digital-marketing" />
+          <Route path="product-design" />
+        </Route>
         <Route path="pages/not-found" element={<NotFound />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="company">
+          <Route path="faqs" element={<FAQs />} />
+          <Route path="careers" element={<Careers />} />
+          <Route path="our-team" element={<Team />} />
+        </Route>
         <Route path="*" element={<Navigate to="/pages/not-found" replace />} />
       </Routes>
       <Footer />
