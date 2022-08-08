@@ -1,9 +1,12 @@
 import React from "react";
 
-export const SEOMarkting = () => {
+import { useTitle } from "../../hooks/useTitle";
+
+export const SEOMarketing = () => {
+  useTitle("Services | SEO Marketing");
   return (
     <>
-      <h1>SEOMarkting</h1>
+      <h1>SEOMarketing</h1>
     </>
   );
 };

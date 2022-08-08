@@ -3,25 +3,44 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.input__group:not(:last-child) {
-  margin-bottom: 1rem;
+.input__group:not(:first-child) {
+  margin-bottom: 20px;
 }
 .input__label {
   font-size: 1.05rem;
 }
-.input {
+.input,
+textarea {
   width: 100%;
   padding: 1rem;
-  margin: 0.5em 0;
   outline: none;
-  border: 1px solid var(--typographic-text-color-light);
+  border: 1px solid #b0b1b3;
+  border-radius: 5px;
   font-size: 1rem;
+  font-family: inherit;
   font-weight: 400;
   color: #98a9bc;
   background: transparent;
   transition: all 0.2s ease-in-out;
 }
+
+textarea {
+  height: 300px;
+}
 .input:invalid {
   border-color: #d71e0e;
+}
+
+.form__group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .form__group {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
