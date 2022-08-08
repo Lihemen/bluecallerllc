@@ -8,6 +8,7 @@ import { useTitle } from "../../hooks/useTitle";
 
 export const Services = () => {
   useTitle("Our Services");
+
   return (
     <>
       <PageHeader name="our services" link="services" />
