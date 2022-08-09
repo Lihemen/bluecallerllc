@@ -1,0 +1,27 @@
+.design {
+  column-gap: 120px;
+}
+
+.design .card {
+  text-align: center;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .design .card:not(:first-child) h3::before {
+    content: "...............";
+    position: absolute;
+    left: -105px;
+    width: 60px;
+    z-index: 20;
+    display: block;
+  }
+}
+
+.design .icon {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 4rem;
+}
+

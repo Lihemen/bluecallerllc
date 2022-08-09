@@ -1,25 +1,27 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { Slide } from "react-awesome-reveal";
 
 import "./pageheader.css";
 
-export const PageHeader = ({ name, link }) => {
+export const PageHeader = ({ name, link, prev_link }) => {
   return (
     <section className="single__page__header">
-      <Slide direction="up" triggerOnce>
-        <h2>{name}</h2>
+      <h2>{name}</h2>
 
-        <ul>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        {prev_link && (
           <li>
-            <Link to="/">Home</Link>
+            <Link to={`/${prev_link}`}>{prev_link}</Link>
           </li>
-          <li>
-            <Link to={`/${link}`}>{name}</Link>
-          </li>
-        </ul>
-      </Slide>
+        )}
+        <li>
+          <Link to={`/${link}`}>{name}</Link>
+        </li>
+      </ul>
     </section>
   );
 };

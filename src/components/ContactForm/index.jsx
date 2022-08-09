@@ -16,24 +16,21 @@ export const ContactForm = () => {
         <article className="support">
           <h3>Contact</h3>
           <h1>Ask us Anything</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            nisi.
-          </p>
+          <p>We provide excellent consulting services to our clients.</p>
           <div className="support__items">
             <div className="col">
               <span className="icon">
                 <FaPhoneAlt />
               </span>
               <h3>24/7 Support</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Round the clock support.</p>
             </div>
             <div className="col">
               <span className="icon">
                 <FaRegClock />
               </span>
               <h3>Realtime Support</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Send us a message.</p>
             </div>
           </div>
         </article>

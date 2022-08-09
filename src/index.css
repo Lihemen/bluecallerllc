@@ -48,6 +48,7 @@ h6 {
   }
 }
 
+/* RIGHT AND LEFT PADDINGS */
 .px-1r {
   padding: 0 1rem;
 }
@@ -60,31 +61,46 @@ h6 {
 .px-4r {
   padding: 0 4rem;
 }
+/* TOP AND BOTTOM PADDINGS */
 .py-1r {
-  padding: 0 1rem;
+  padding: 1rem 0;
 }
 .py-2r {
-  padding: 0 2rem;
+  padding: 2rem 0;
 }
 .py-3r {
-  padding: 0 3rem;
+  padding: 3rem 0;
 }
 .py-4r {
-  padding: 0 4rem;
+  padding: 4rem 0;
 }
-.py-1r {
-  padding: 0 1rem;
+/* TOP PADDINGS */
+.pt-1r {
+  padding-top: 1rem;
 }
-.py-2r {
-  padding: 0 2rem;
+.pt-2r {
+  padding-top: 2rem;
 }
-.py-3r {
-  padding: 0 3rem;
+.pt-3r {
+  padding-top: 3rem;
 }
-.py-4r {
-  padding: 0 4rem;
+.pt-4r {
+  padding-top: 4rem;
 }
-
+/* BOTTOM PADDINGS */
+.pb-1r {
+  padding-bottom: 1rem;
+}
+.pb-2r {
+  padding-bottom: 2rem;
+}
+.pb-3r {
+  padding-bottom: 3rem;
+}
+.pb-4r {
+  padding-bottom: 4rem;
+}
+/* RIGHT PADDINGS */
 .pr-1r {
   padding-right: 1rem;
 }
@@ -97,7 +113,7 @@ h6 {
 .pr-4r {
   padding-right: 4rem;
 }
-
+/* LEFT PADDINGS */
 .pl-1r {
   padding-left: 1rem;
 }

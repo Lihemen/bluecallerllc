@@ -14,10 +14,10 @@ export const TopServices = () => {
           <h3>App Design</h3>
           <h1>We Always Create Innovation For You</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
-            animi optio delectus quo praesentium obcaecati?
+            Develop a unique and functional app that is user-friendly and easy
+            to use.
           </p>
-          <Link to="/services#app-development">Learn More</Link>
+          <Link to="/services/app-development">Learn More</Link>
         </div>
         <div className="col__image">
           <img src={iphonemockup} alt="iphone 13 mockup" />
@@ -31,10 +31,10 @@ export const TopServices = () => {
           <h3>Web Design</h3>
           <h1>Just A Perfect Experience of Tech</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
-            animi optio delectus quo praesentium obcaecati?
+            Build a website that is responsive, fast, perfomant and generates
+            traffic.
           </p>
-          <Link to="/services#app-development">Learn More</Link>
+          <Link to="/services/app-development">Learn More</Link>
         </div>
       </div>
     </section>
