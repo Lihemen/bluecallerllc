@@ -12,14 +12,17 @@ export const ContactDetails = () => {
             <FaMapMarkerAlt />
           </span>
           <h3>Address</h3>
-          <p>Zitel Plaza P.O.W Mafemi Crescent, opp Daily Trust Utako</p>
+          <p>
+            Zitel Plaza, P.O.W Mafemi Crescent, opp Daily Trust, Utako Abuja
+            900108
+          </p>
         </div>
         <div className="col">
           <span className="icon">
             <FaPhoneAlt />
           </span>
           <h3>Phone</h3>
-          <p>+234 701 105 6442</p>
+          <p>+234 701 833 6593</p>
           <p>+234 701 105 6442</p>
         </div>
         <div className="col">

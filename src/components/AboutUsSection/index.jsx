@@ -24,7 +24,7 @@ export const AboutUsSection = () => {
             <p>
               <span>20,000+</span> <IoStatsChartOutline />{" "}
             </p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Trusted customers all over the world.</p>
 
             <div className="icons">
               <img src={testimonial1} alt="person1" />
@@ -48,10 +48,11 @@ export const AboutUsSection = () => {
               <div>
                 <h4>Our Vision</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum ea, dolor earum consequuntur, quisquam ab in esse
-                  nihil voluptatibus aliquid necessitatibus delectus alias omnis
-                  obcaecati quas vitae corrupti odit. Corporis?
+                  Our vision is to be the leading software development company
+                  in sub-saharan Africa by providing services that are
+                  cost-effective, reliable, and technologically advanced. We are
+                  committed to providing our clients with the best possible
+                  solutions.
                 </p>
               </div>
             </li>
@@ -62,10 +63,10 @@ export const AboutUsSection = () => {
               <div>
                 <h4>Our Mission</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum ea, dolor earum consequuntur, quisquam ab in esse
-                  nihil voluptatibus aliquid necessitatibus delectus alias omnis
-                  obcaecati quas vitae corrupti odit. Corporis?
+                  Bluecaller's mission is to serve as a trusted partner to our
+                  clients by responsibly providing software services that enable
+                  growth and business development by creating new ways to
+                  connect with your customers.
                 </p>
               </div>
             </li>

@@ -30,7 +30,7 @@ export const Footer = () => {
       <div className="level__2">
         <div className="company">
           <h3 translate="no">
-            <img src={logo} alt="LOGO" width={40} height={40} /> BLUECALLER
+            <img src={logo} alt="LOGO" width={40} height={40} /> BlueCaller
           </h3>
           <p>
             We create websites and apps with the greatest of care and deliver
@@ -92,7 +92,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="level__3">
-        <p>Copyright &copy; {new Date().getFullYear()} Bluecaller</p>
+        <p>Copyright &copy; {new Date().getFullYear()} BlueCaller</p>
         <ul className="social__links">
           <li>
             <a
