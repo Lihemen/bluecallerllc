@@ -10,8 +10,8 @@ import "./designprocess.css";
 export const DesignProcess = () => {
   return (
     <section className="services__card pt-4r">
-      <h3>How we Work</h3>
-      <h1>Inventing and Making It Happen</h1>
+      <h3 className="service__sec-title">How we Work</h3>
+      <h1 className="service__title">Inventing and Making It Happen</h1>
       <div className="services__grid design">
         <Fade cascade triggerOnce>
           <div className="card">

@@ -18,7 +18,7 @@
   border-color: #fff;
 }
 .contact__details .icon {
-  color: #ffff77;
+  color: var(--primary-color);
   font-size: 3rem;
   background: #000;
   padding: 10px 20px;

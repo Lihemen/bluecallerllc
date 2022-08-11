@@ -12,7 +12,7 @@ footer {
 
 footer .level__1 h3 {
   padding-bottom: 1rem;
-  color: #ffd558;
+  color: var(--primary-color);
   font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ footer .level__1 h3 {
 
 .level__1 .links a:first-child {
   margin-right: 2rem;
-  background-color: #ffd558;
+  background-color: var(--primary-color);
   padding: 15px 30px;
   border-radius: 5px;
   color: #000;
@@ -62,7 +62,7 @@ footer .level__1 h3 {
 }
 
 .level__2 a:hover {
-  color: #ffd558;
+  color: var(--primary-color);
   transition: all 0.15s linear;
 }
 
@@ -99,7 +99,7 @@ footer .level__1 h3 {
 }
 
 .social__links a:hover {
-  background-color: #ffd558;
+  background-color: var(--primary-color);
   color: #000;
   transition: all 0.15s ease;
 }

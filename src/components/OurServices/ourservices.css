@@ -3,13 +3,13 @@
   padding-bottom: 2rem;
 }
 
-.services__card > h3 {
-  color: #ffff77;
+.service__sec-title {
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 
-.services__card > h1 {
+.service__title {
   font-size: 3.5rem;
 }
 
@@ -31,7 +31,7 @@
   border-color: #fff;
 }
 .services__grid .icon {
-  color: #ffff77;
+  color: var(--primary-color);
   font-size: 3rem;
 }
 
@@ -50,14 +50,14 @@
 }
 
 .card a:hover {
-  color: #ffff77;
+  color: var(--primary-color);
 }
 
 @media (max-width: 800px) {
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .services__card > h1 {
+  .service__title {
     font-size: 2.5rem;
   }
 }

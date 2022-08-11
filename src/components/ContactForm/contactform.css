@@ -19,7 +19,7 @@
 }
 
 .support > h3 {
-  color: #ffff77;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: 1.5rem;
 }
@@ -43,7 +43,7 @@
 }
 .support__items .icon {
   background: #000;
-  color: #ffff77;
+  color: var(--primary-color);
   padding: 8px 10px;
   border-radius: 50%;
   font-size: 1.5rem;
