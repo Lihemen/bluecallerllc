@@ -41,7 +41,7 @@
 }
 
 .slide__2 a {
-  background-color: #ffd558;
+  background-color: var(--primary-color);
   color: #000;
   text-decoration: none !important;
   padding: 10px 20px;
@@ -62,7 +62,7 @@
   position: absolute;
   top: 0;
   font-size: 20px;
-  color: #ffd558;
+  color: var(--primary-color);
 }
 
 .count a {
@@ -78,7 +78,7 @@
 }
 
 .col__awards {
-  background-color: #ffd558;
+  background-color: var(--primary-color);
   color: #000;
   flex: 1;
   padding: 3rem;

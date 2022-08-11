@@ -11,8 +11,8 @@ import "./ourservices.css";
 export const OurServices = () => {
   return (
     <section className="services__card">
-      <h3>Our Services</h3>
-      <h1>The Ultimate Possibility of The Future</h1>
+      <h3 className="service__sec-title">Our Services</h3>
+      <h1 className="service__title">The Ultimate Possibility of The Future</h1>
 
       <div className="services__grid">
         <Rotate cascade triggerOnce duration={750}>

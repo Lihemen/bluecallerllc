@@ -20,8 +20,8 @@ export const Footer = () => {
         <div>
           <h1>Bring your ideas to life</h1>
           <div className="links">
-            <Link to="#">Get Started</Link>
-            <Link to="#">
+            <Link to="/services">Get Started</Link>
+            <Link to="/contact">
               <FaPhoneAlt /> Contact Us
             </Link>
           </div>
@@ -48,7 +48,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:07011056442">+1 (917) 917-917</a>
+                <a href="tel:07011056442">(+234) 701 833 6593</a>
               </li>
               <li>
                 <a href="/#">Zitel Plaza, P.O.W Mafemi Crescent, Utako</a>
@@ -105,7 +105,7 @@ export const Footer = () => {
           </li>
           <li>
             <a
-              href="https://instagram.com/bluecallerllc"
+              href="https://www.instagram.com/blue_caller/"
               target="_blank"
               rel="noreferrer noopener"
             >

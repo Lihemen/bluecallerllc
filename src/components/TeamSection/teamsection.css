@@ -3,7 +3,7 @@
   padding: 4rem 0;
 }
 .team__section > h3 {
-  color: #ffff77;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: 1.5rem;
 }
@@ -35,7 +35,7 @@
 }
 
 .team__grid .col span {
-  color: #ffff77;
+  color: var(--primary-color);
   font-size: 12px;
 }
 .team__grid .col ul {

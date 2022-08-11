@@ -7,6 +7,26 @@ import { MobileMenu } from "../MobileMenu";
 
 import logo from "../../assets/icon.webp";
 
+const NavbarLink = (props) => {
+  return (
+    <li>
+      <NavLink
+        to={props.to}
+        style={({ isActive }) =>
+          isActive
+            ? {
+                color: "var(--primary-color)",
+                textDecoration: "underline",
+              }
+            : undefined
+        }
+      >
+        {props.name}
+      </NavLink>
+    </li>
+  );
+};
+
 export const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
@@ -14,21 +34,15 @@ export const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <img src={logo} alt="Logo" width={32} height={32} />
-          <NavLink to="/">BlueCaller </NavLink>
+          <NavLink to="/" className="pl-1r">
+            BlueCaller
+          </NavLink>
         </div>
         <ul className="nav__links">
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/services">Services</NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects">Projects</NavLink>
-          </li>
+          <NavbarLink to="/" name="Home" />
+          <NavbarLink to="/about" name="About" />
+          <NavbarLink to="/services" name="Services" />
+          <NavbarLink to="/projects" name="Projects" />
         </ul>
         <div className="search">
           <FaSearch />

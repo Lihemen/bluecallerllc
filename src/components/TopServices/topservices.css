@@ -16,7 +16,7 @@
 
 .col__text h3 {
   text-transform: uppercase;
-  color: #ffff77;
+  color: var(--primary-color);
 }
 .col__text h1 {
   font-size: 4rem;
@@ -27,7 +27,7 @@
 .col__text a {
   background-color: #000;
   padding: 10px 20px;
-  color: #ffff77;
+  color: var(--primary-color);
   text-transform: uppercase;
   border-radius: 5px;
 }

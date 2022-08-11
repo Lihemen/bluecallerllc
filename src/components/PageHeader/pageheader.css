@@ -21,7 +21,7 @@
 
 .single__page__header ul li:not(:first-child) ::before {
   content: "\2022";
-  color: #ffff77;
+  color: var(--primary-color);
   padding: 0 20px;
   font-weight: bold;
   display: inline-block;

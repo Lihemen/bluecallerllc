@@ -5,7 +5,11 @@
   padding: 0;
   margin: 0;
 }
-
+:root {
+  --primary-color: #ffff77;
+  --secondary-color: #3d4044;
+  --text-color: #b0b1b3;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -17,7 +21,7 @@ body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", "Helvetica Neue", "Roboto", sans-serif;
   background-color: #3d4044;
   color: #fff;
   padding: 2.5rem 5rem;
@@ -143,7 +147,7 @@ h6 {
 }
 
 .not__found span {
-  color: #ffff77;
+  color: var(--primary-color);
 }
 
 .not__found h3 {
