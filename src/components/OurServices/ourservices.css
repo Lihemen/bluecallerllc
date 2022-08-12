@@ -28,7 +28,7 @@
   transition: all 0.2s ease-in-out;
 }
 .services__grid .card:hover {
-  border-color: #fff;
+  border-color: var(--light-color);
 }
 .services__grid .icon {
   color: var(--primary-color);

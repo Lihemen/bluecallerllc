@@ -14,8 +14,8 @@ export const ContactForm = () => {
     <Slide triggerOnce direction="left" cascade>
       <section className="contact__form">
         <article className="support">
-          <h3>Contact</h3>
-          <h1>Ask us Anything</h1>
+          <h3 className="service__sec-title">Contact</h3>
+          <h1 className="service__title">Ask us Anything</h1>
           <p>We provide excellent consulting services to our clients.</p>
           <div className="support__items">
             <div className="col">

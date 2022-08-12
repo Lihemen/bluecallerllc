@@ -85,12 +85,12 @@
 }
 .about__hero .col ul li h4 {
   font-size: 1.4rem;
-  color: #fff;
+  color: var(--light-color);
 }
 
 .about__hero .col h1 {
   font-size: 3rem;
-  color: #fff;
+  color: var(--light-color);
 }
 
 @media (max-width: 800px) {
