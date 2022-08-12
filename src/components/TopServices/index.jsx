@@ -34,7 +34,7 @@ export const TopServices = () => {
             Build a website that is responsive, fast, perfomant and generates
             traffic.
           </p>
-          <Link to="/services/app-development">Learn More</Link>
+          <Link to="/services/web-development">Learn More</Link>
         </div>
       </div>
     </section>
