@@ -15,7 +15,7 @@
   color: #b0b1b3;
 }
 .contact__details .col:hover {
-  border-color: #fff;
+  border-color: var(--light-color);
 }
 .contact__details .icon {
   color: var(--primary-color);

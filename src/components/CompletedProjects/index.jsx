@@ -33,7 +33,7 @@ export const CompletedProjects = () => {
         </Slide>
         <Slide direction="up" triggerOnce className="slide__2">
           <div className="column">
-            <h2>Digitize Your Business</h2>
+            <h2 style={{ color: "#fff" }}>Digitize Your Business</h2>
             <p>
               Integrity First. Service Always. Innovation Never Ceases. Grow
               your business and reach out to connect people through information.
@@ -56,7 +56,7 @@ export const CompletedProjects = () => {
               name="email"
               id="email"
             />
-            <button>Get Quote</button>
+            <button type="submit">Get Quote</button>
           </Form>
         </Formik>
       </div>

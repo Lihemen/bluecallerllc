@@ -73,7 +73,7 @@
 .col__projects {
   flex: 1;
   padding: 3rem;
-  border: 1px solid #fff;
+  border: 1px solid var(--light-color);
   margin-right: 2rem;
 }
 
@@ -102,7 +102,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: #b0b1b3;
   padding: 3rem;
 }
 .quote input,
@@ -113,18 +113,23 @@
 .quote p {
   padding-top: 49%;
   padding-bottom: 2rem;
-  color: #fff;
+  color: #b0b1b3;
   font-size: 1.8rem;
 }
 
 .quote input {
-  border: 1px solid #fff;
+  border: 1px solid #b0b1b3;
   outline: none;
   padding: 1rem;
   background: transparent;
   color: #fff;
   width: 60%;
+  transition: border-color 0.15s ease;
 }
+.quote input:invalid {
+  border-color: rgb(206, 87, 87);
+}
+
 .quote input::placeholder {
   color: #fff;
 }
@@ -134,7 +139,7 @@
   padding: 1rem;
   margin-left: 1rem;
   background: #000;
-  color: #fff;
+  color: #b0b1b3;
   cursor: pointer;
 }
 

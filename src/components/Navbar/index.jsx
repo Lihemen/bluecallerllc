@@ -33,10 +33,8 @@ export const Navbar = () => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <img src={logo} alt="Logo" width={32} height={32} />
-          <NavLink to="/" className="pl-1r">
-            BlueCaller
-          </NavLink>
+          <img src={logo} alt="Logo" width={40} height={40} />
+          <NavLink to="/">BlueCaller</NavLink>
         </div>
         <ul className="nav__links">
           <NavbarLink to="/" name="Home" />

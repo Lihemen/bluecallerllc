@@ -12,7 +12,8 @@ import { NotFound } from "./pages/NotFound";
 import { Projects } from "./pages/Projects";
 
 import { FAQs } from "./pages/Company/FAQs";
-import { Careers } from "./pages/Company/Careers";
+// Not Hiring Yet
+// import { Careers } from "./pages/Company/Careers";
 import { PrivacyPolicy } from "./pages/Company/PrivacyPolicy";
 
 // Single Services
@@ -57,7 +58,7 @@ function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="company">
           <Route path="faqs" element={<FAQs />} />
-          <Route path="careers" element={<Careers />} />
+          {/* <Route path="careers" element={<Careers />} /> */}
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Route>
         <Route path="*" element={<Navigate to="/pages/not-found" replace />} />
