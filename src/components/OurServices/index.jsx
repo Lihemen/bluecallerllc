@@ -58,8 +58,8 @@ export const OurServices = () => {
             </span>
             <h3>Digital Marketing</h3>
             <p>
-              We help clients create digital messaging, grow their digital and
-              physical presence, connecting with new audience and customers.
+              We help clients create digital messaging, grow their digital
+              presence, connecting with new audience and customers.
             </p>
 
             <Link to="/services/digital-marketing">Read More</Link>

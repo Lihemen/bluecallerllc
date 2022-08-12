@@ -1,7 +1,11 @@
 import React from "react";
 import { PageHeader } from "../../components/PageHeader";
 
+import { SingleService } from "../../components/SingleService";
+
 import { useTitle } from "../../hooks/useTitle";
+
+import digitalmarketing from "../../assets/digitalmarketing.webp";
 
 export const DigitalMarketing = () => {
   useTitle("Services | Digital Marketing");
@@ -12,7 +16,13 @@ export const DigitalMarketing = () => {
         link="services/digital-marketing"
         prev_link="services"
       />
-      <h1>DigitalMarketing</h1>
+      <SingleService
+        title="Drive Business Growth with Digital and Inbound Marketing"
+        summary="lorem ipsum"
+        image={digitalmarketing}
+        secondary_title="Title"
+        secondary_summary="Summary"
+      />
     </>
   );
 };
