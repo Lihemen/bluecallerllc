@@ -14,7 +14,7 @@ export const CompletedProjects = () => {
     <div className="completedprojects">
       <div className="count">
         <Slide direction="left" className="slide__1" triggerOnce>
-          <div className="row">
+          <div className="column">
             <div className="col__projects">
               <h1>
                 20 <span className="plus">+</span>{" "}
@@ -32,7 +32,7 @@ export const CompletedProjects = () => {
           </div>
         </Slide>
         <Slide direction="up" triggerOnce className="slide__2">
-          <div className="row">
+          <div className="column">
             <h2>Digitize Your Business</h2>
             <p>
               Integrity First. Service Always. Innovation Never Ceases. Grow

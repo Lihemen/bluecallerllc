@@ -9,7 +9,7 @@ export const RegularQuestions = () => {
       <div className="regular__questions">
         <Question
           question="01. Where is your office location?"
-          answer="We are located at Suite D10 Zitel Plaza, P.O.W Mafemi Crescent, Opp. Daily Trust, Utako"
+          answer="We are located at Plot A212, P.O.W Mafemi Crescent, Opp. Daily Trust, Utako"
         />
         <Question
           question="02. What are your office hours?"
@@ -17,7 +17,7 @@ export const RegularQuestions = () => {
         />
         <Question
           question="03. What do I need to know before contacting you?"
-          answer="Well, the most important thing to know is what do you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
+          answer="Well, the most important thing to know is what you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
         />
         <Question
           question="04. Will my observations concerning the prototypes be factored into the final version?"

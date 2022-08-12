@@ -24,19 +24,19 @@
 .count > * {
   width: 100%;
 }
-.slide__1 .row {
+.slide__1 .column {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
 
-.slide__2 .row {
+.slide__2 .column {
   background-color: #000;
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  height: 280px;
+  height: 270px;
   justify-content: space-around;
 }
 

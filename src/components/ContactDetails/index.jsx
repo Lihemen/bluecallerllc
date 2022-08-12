@@ -13,7 +13,7 @@ export const ContactDetails = () => {
           </span>
           <h3>Address</h3>
           <p>
-            Zitel Plaza, P.O.W Mafemi Crescent, opp Daily Trust, Utako Abuja
+            Plot A212, P.O.W Mafemi Crescent, opp Daily Trust, Utako Abuja
             900108
           </p>
         </div>
