@@ -1,26 +1,22 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@tailwind base;
+@tailwind components;
+
 :root {
-  --primary-color: #ffff77;
-  --secondary-color: #3d4044;
-  --text-color: #b0b1b3;
-  --footer-background: #000;
-  --body: #3d4044;
-  --light-color: #fff;
+  --primary-color: #7e6bb3;
+  --secondary-color: #2a243c;
+  --text-color: #111;
+  --footer-background: #2a243c;
+  --body: #fafafa;
+  --light-color: #43395f;
+  --margin: -4rem -12rem;
+  --padding: 2rem 12rem;
 }
 
-:root.light {
-  --primary-color: #d1d115;
-  --secondary-color: #57575d;
-  --text-color: #111;
-  --footer-background: #3d4044;
-  --body: #fafafa;
-  --light-color: #111;
+@media (max-width: 800px) {
+  :root {
+    --margin: -2rem;
+    --padding: 1rem 2rem;
+  }
 }
 
 ::selection {
@@ -39,11 +35,11 @@ body {
 }
 
 body {
-  font-family: "Poppins", "Helvetica Neue", "Roboto", sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Roboto', sans-serif;
   background-color: var(--body);
   color: var(--light-color);
-  padding: 3rem 6rem;
-  line-height: 1.5;
+  padding: 4rem 12rem;
+  line-height: 2;
 }
 a {
   text-decoration: none;
@@ -194,3 +190,4 @@ h6 {
   line-height: 2;
 }
 
+@tailwind utilities;

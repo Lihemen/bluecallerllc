@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import "./clients.css";
+import './clients.css';
 
 export const Clients = () => {
   return (
-    <section className="clients__card">
+    <section className='clients__card'>
       <h3>Our Clients</h3>
-      <h1>Trusted by 20,000+ customers around the world</h1>
+      <h1>Trusted by 5,000+ customers around the world</h1>
     </section>
   );
 };
-

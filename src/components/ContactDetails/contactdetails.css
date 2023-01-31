@@ -19,9 +19,9 @@
 }
 .contact__details .icon {
   color: var(--primary-color);
-  font-size: 3rem;
-  background: #000;
-  padding: 10px 20px;
+  font-size: 2rem;
+  background: var(--secondary-color);
+  padding: 20px;
   border-radius: 50%;
   vertical-align: middle;
   display: inline-block;
@@ -41,4 +41,3 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
-

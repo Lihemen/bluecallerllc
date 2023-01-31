@@ -1,66 +1,84 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Formik, Form } from "formik";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Formik, Form } from 'formik';
+import { Slide } from 'react-awesome-reveal';
 
-import { Slide } from "react-awesome-reveal";
+import { TextInput } from '../TextInput';
 
-import "./completedprojects.css";
+import quoteimg from '../../assets/quoteimg.webp';
 
 export const CompletedProjects = () => {
   const getQuote = (values) => {
     console.log(values);
   };
   return (
-    <div className="completedprojects">
-      <div className="count">
-        <Slide direction="left" className="slide__1" triggerOnce>
-          <div className="column">
-            <div className="col__projects">
-              <h1>
-                20 <span className="plus">+</span>{" "}
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 h-full child:rounded-xl py-32 '>
+      <div className='space-y-6 flex flex-col'>
+        <Slide direction='left' triggerOnce>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+            <div className='bg-bl-50 p-8 py-12 rounded-xl'>
+              <h1 className='text-3xl flex items-start'>
+                20 <span className='text-xl'>+</span>{' '}
               </h1>
               <p>Projects</p>
-              <Link to="/projects">Our Projects</Link>
+              <Link to='/projects'>Our Projects</Link>
             </div>
-            <div className="col__awards">
-              <h1>
-                10 <span className="plus">+</span>{" "}
+
+            <div className='bg-bl-400 text-white p-8 py-12 rounded-xl'>
+              <h1 className='text-3xl flex items-start'>
+                10 <span className='text-xl'>+</span>{' '}
               </h1>
               <p>Awards</p>
-              <Link to="/team#achievements">Our Achievements</Link>
+              <Link to='/team#achievements'>Our Achievements</Link>
             </div>
           </div>
         </Slide>
-        <Slide direction="up" triggerOnce className="slide__2">
-          <div className="column">
-            <h2 style={{ color: "#fff" }}>Digitize Your Business</h2>
-            <p>
+        <Slide direction='up' triggerOnce>
+          <div className='flex flex-col gap-8 bg-bl-900 rounded-xl p-8 text-white'>
+            <h2 className='text-lg'>Digitize Your Business</h2>
+            <p className='text-lg'>
               Integrity First. Service Always. Innovation Never Ceases. Grow
               your business and reach out to connect people through information.
               We offer seamless connection through total connectivity
             </p>
-            <Link to="/contact">Contact Us</Link>
+            <Link
+              to='/contact'
+              className='p-3 px-5 rounded-xl text-white bg-bl-400 w-max'>
+              Contact Us
+            </Link>
           </div>
         </Slide>
       </div>
-      <div className="quote">
-        <p>
+      <div
+        className={`p-8 flex flex-col w-full flex-1 min-h-[24rem] text-lg gap-4 justify-end text-white`}
+        style={{
+          background: `url(${quoteimg})`,
+          backgroundPosition: 'cover',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}>
+        <p className='text-bl-50'>
           Inventing not for business, inventing for the future. Get a free
-          quote.{" "}
+          quote.{' '}
         </p>
-        <Formik initialValues={{ email: "" }} onSubmit={getQuote}>
-          <Form>
-            <input
-              type="email"
-              placeholder="Your Email"
-              name="email"
-              id="email"
+        <Formik
+          initialValues={{ email: '' }}
+          onSubmit={(val, actions) => {
+            getQuote(val);
+            actions.resetForm();
+          }}>
+          <Form className='grid grid-cols-4 '>
+            <TextInput
+              name='email'
+              id='email'
+              type='email'
+              placeholder='Enter your email'
+              className='text-white col-span-3'
             />
-            <button type="submit">Get Quote</button>
+            <button className='p-3 bg-bl-400 text-white'>Get Quote</button>
           </Form>
         </Formik>
       </div>
     </div>
   );
 };
-

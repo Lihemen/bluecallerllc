@@ -2,9 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 2rem; */
-  margin: 0 -3rem;
   font-weight: 600;
+  position: sticky;
+  padding: var(--padding);
+  margin: var(--margin);
+  top: 0;
+  backdrop-filter: blur(1rem);
+  z-index: 999;
 }
 .logo {
   display: flex;
@@ -63,8 +67,4 @@
   .menu__btn {
     display: block;
   }
-  .navbar {
-    margin: 0;
-  }
 }
-
