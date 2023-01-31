@@ -1,36 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   FaPhoneAlt,
   FaFacebook,
   FaInstagram,
   FaTwitter,
   FaWhatsapp,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
-import logo from "../../assets/icon.webp";
+import logo from '../../assets/icon.webp';
 
-import "./footer.css";
+import './footer.css';
 
 export const Footer = () => {
   return (
     <footer>
-      <div className="level__1">
+      <div className='level__1'>
         <h3>LET'S WORK</h3>
         <div>
           <h1>Bring your ideas to life</h1>
-          <div className="links">
-            <Link to="/services">Get Started</Link>
-            <Link to="/contact">
+          <div className='links'>
+            <Link to='/services'>Get Started</Link>
+            <Link to='/contact'>
               <FaPhoneAlt /> Contact Us
             </Link>
           </div>
         </div>
       </div>
-      <div className="level__2">
-        <div className="company">
-          <h3 translate="no">
-            <img src={logo} alt="LOGO" width={40} height={40} /> BlueCaller
+      <div className='level__2'>
+        <div className='company'>
+          <h3 translate='no'>
+            <img src={logo} alt='LOGO' width={40} height={40} /> BlueCaller
           </h3>
           <p>
             We create websites and apps with the greatest of care and deliver
@@ -38,95 +38,91 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className="links__grid">
-          <div className="col">
+        <div className='links__grid'>
+          <div className='col'>
             <h3>Contacts</h3>
             <ul>
               <li>
-                <a href="mailto:info@bluecallerllc.com">
+                <a href='mailto:info@bluecallerllc.com'>
                   info@bluecallerllc.com
                 </a>
               </li>
               <li>
-                <a href="tel:07011056442">(+234) 701 833 6593</a>
+                <a href='tel:07011056442'>(+234) 701 833 6593</a>
               </li>
               <li>
-                <a href="/#">Zitel Plaza, P.O.W Mafemi Crescent, Utako</a>
+                <a href='/#'>Zitel Plaza, P.O.W Mafemi Crescent, Utako</a>
               </li>
             </ul>
           </div>
-          <div className="col">
+          <div className='col'>
             <h3>Quicklinks</h3>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to='/'>Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to='/about'>About</Link>
               </li>
               <li>
-                <Link to="/team">Team</Link>
+                <Link to='/team'>Team</Link>
               </li>
               <li>
-                <Link to="/services">Services</Link>
+                <Link to='/services'>Services</Link>
               </li>
             </ul>
           </div>
-          <div className="col">
+          <div className='col'>
             <h3>Support</h3>
             <ul>
               <li>
-                <Link to="/company/faqs">FAQs</Link>
+                <Link to='/company/faqs'>FAQs</Link>
               </li>
               <li>
-                <Link to="/company/privacy-policy">Policy</Link>
+                <Link to='/company/privacy-policy'>Policy</Link>
               </li>
               <li>
-                <Link to="/company/careers">Career</Link>
+                <Link to='/company/careers'>Career</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="level__3">
+      <div className='level__3'>
         <p>Copyright &copy; {new Date().getFullYear()} BlueCaller</p>
-        <ul className="social__links">
+        <ul className='flex gap-8 child:bg-white child:flex child:items-center child:rounded-full child:px-2 text-xl'>
           <li>
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+              href='https://facebook.com'
+              target='_blank'
+              rel='noreferrer noopener'>
               <FaFacebook />
             </a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/blue_caller/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+              href='https://www.instagram.com/blue_caller/'
+              target='_blank'
+              rel='noreferrer noopener'>
               <FaInstagram />
             </a>
           </li>
           <li>
             <a
-              href="https://twitter.com/bluecallerllc"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+              href='https://twitter.com/bluecallerllc'
+              target='_blank'
+              rel='noreferrer noopener'>
               <FaTwitter />
             </a>
           </li>
           <li>
             <a
-              href="https://api.whatsapp.com?send="
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+              href='https://api.whatsapp.com?send='
+              target='_blank'
+              rel='noreferrer noopener'>
               <FaWhatsapp />
             </a>
           </li>
@@ -135,4 +131,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
