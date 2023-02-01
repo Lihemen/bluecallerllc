@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation, Outlet, createBrowserRouter } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -38,11 +39,11 @@ function App() {
     }
   }, [pathname, search]);
   return (
-    <>
+    <AnimatePresence>
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </AnimatePresence>
   );
 }
 
@@ -89,7 +90,7 @@ const router = createBrowserRouter([
             element: <SEOMarketing />,
           },
           {
-            path: 'app-developement',
+            path: 'app-development',
             element: <MobileDev />,
           },
           {
@@ -103,12 +104,17 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: 'faqs',
-        element: <FAQs />,
-      },
-      {
-        path: 'privacy-policy',
-        element: <PrivacyPolicy />,
+        path: 'company',
+        children: [
+          {
+            path: 'faqs',
+            element: <FAQs />,
+          },
+          {
+            path: 'privacy-policy',
+            element: <PrivacyPolicy />,
+          },
+        ],
       },
     ],
   },

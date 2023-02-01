@@ -60,9 +60,8 @@ summary::-webkit-details-marker {
   padding: 4rem 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 921px) {
   .regular__questions {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-

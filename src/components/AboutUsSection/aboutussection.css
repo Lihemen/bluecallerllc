@@ -23,7 +23,6 @@
 
 .about__hero .image__container .card {
   width: 300px;
-  background-color: #57575d;
   padding: 2rem;
   border-radius: 5px;
   position: absolute;
@@ -93,7 +92,7 @@
   color: var(--light-color);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 921px) {
   .about__hero {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -102,4 +101,3 @@
     margin-top: 2rem;
   }
 }
-

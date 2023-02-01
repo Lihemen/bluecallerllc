@@ -5,9 +5,14 @@ import router from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { RouterProvider } from 'react-router-dom';
+import { MantineProvider } from '@mantine/core';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<RouterProvider router={router} />);
+root.render(
+  <MantineProvider withNormalizeCSS withGlobalStyles>
+    <RouterProvider router={router} />
+  </MantineProvider>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

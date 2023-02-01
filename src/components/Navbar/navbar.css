@@ -7,7 +7,7 @@
   padding: var(--padding);
   margin: var(--margin);
   top: 0;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(30px);
   z-index: 999;
 }
 .logo {
@@ -59,7 +59,7 @@
   border-radius: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 921px) {
   .nav__links,
   .search {
     display: none;

@@ -53,9 +53,12 @@
   width: 280px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 921px) {
   .hero {
     flex-direction: column;
+  }
+  .hero p {
+    width: 100%;
   }
   .hero .hero__title {
     font-size: 3rem;

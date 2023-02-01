@@ -1,15 +1,15 @@
-import React from "react";
-import { PageHeader } from "../../../components/PageHeader";
+import React from 'react';
+import { PageHeader } from '../../../components/PageHeader';
+import Opacity from '../../../motions/Opacity';
 
-import { useTitle } from "../../../hooks/useTitle";
+import { useTitle } from '../../../hooks/useTitle';
 
 export const Careers = () => {
-  useTitle("We are Hiring");
+  useTitle('We are Hiring');
 
   return (
-    <>
-      <PageHeader name="We are Hiring" link="company/careers" />
-    </>
+    <Opacity>
+      <PageHeader name='We are Hiring' link='company/careers' />
+    </Opacity>
   );
 };
-
