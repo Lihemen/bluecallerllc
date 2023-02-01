@@ -19,9 +19,13 @@ export const Footer = () => {
         <h3>LET'S WORK</h3>
         <div>
           <h1>Bring your ideas to life</h1>
-          <div className='links'>
-            <Link to='/services'>Get Started</Link>
-            <Link to='/contact'>
+          <div className='flex items-center gap-8'>
+            <Link to='/services' className='text-white'>
+              Get Started
+            </Link>
+            <Link
+              to='/contact'
+              className='flex items-center bg-bl-600 text-white p-3 px-5 gap-4 rounded-xl'>
               <FaPhoneAlt /> Contact Us
             </Link>
           </div>
@@ -93,7 +97,7 @@ export const Footer = () => {
       </div>
       <div className='level__3'>
         <p>Copyright &copy; {new Date().getFullYear()} BlueCaller</p>
-        <ul className='flex gap-8 child:bg-white child:flex child:items-center child:rounded-full child:px-2 text-xl'>
+        <ul className='flex gap-8 child:bg-white child:flex child:items-center child:rounded-full child:p-2 text-xl'>
           <li>
             <a
               href='https://facebook.com'

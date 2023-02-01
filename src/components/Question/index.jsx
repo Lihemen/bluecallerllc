@@ -1,17 +1,15 @@
-import React from "react";
-import { FaPlusCircle } from "react-icons/fa";
+import React from 'react';
+import { Accordion } from '@mantine/core';
 
 export const Question = ({ question, answer }) => {
   return (
-    <details>
-      <summary>
-        <span className="summary__title">{question}</span>
-        <span className="summary__open icon">
-          <FaPlusCircle />
-        </span>
-      </summary>
-      <p className="summary__content">{answer}</p>
-    </details>
+    <Accordion.Item value={question}>
+      <Accordion.Control className='py-8 !font-bold leading-6'>
+        {question}
+      </Accordion.Control>
+      <Accordion.Panel className='text-left leading-10'>
+        {answer}
+      </Accordion.Panel>
+    </Accordion.Item>
   );
 };
-

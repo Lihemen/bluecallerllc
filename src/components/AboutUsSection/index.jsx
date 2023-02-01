@@ -20,9 +20,9 @@ export const AboutUsSection = () => {
       <JackInTheBox triggerOnce delay={200}>
         <div className='image__container'>
           <img src={teamtogether} alt='team holding hands together' />
-          <div className='card rounded-xl bg-bl-50'>
+          <div className='card rounded-xl bg-bl-800 bg-opacity-90'>
             <p>
-              <span>20,000+</span> <IoStatsChartOutline />{' '}
+              <span>5,000+</span> <IoStatsChartOutline />{' '}
             </p>
             <p>Trusted customers all over the world.</p>
 

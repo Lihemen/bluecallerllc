@@ -8,11 +8,13 @@ import { RegularQuestions } from "../../../components/RegularQuestions";
 
 import { ContactForm } from "../../../components/ContactForm";
 
+import Opacity from '../../../motions/Opacity';
+
 export const FAQs = () => {
   useTitle("Frequently Asked Questions");
 
   return (
-    <>
+    <Opacity>
       <PageHeader name="FAQs Page" link="company/faqs" />
       <section className="faqs">
         <h3 className="service__sec-title">FAQs</h3>
@@ -22,7 +24,7 @@ export const FAQs = () => {
         <RegularQuestions />
         <ContactForm />
       </section>
-    </>
+    </Opacity>
   );
 };
 

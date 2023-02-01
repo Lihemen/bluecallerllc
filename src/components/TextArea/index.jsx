@@ -12,7 +12,7 @@ export const TextArea = ({ label, placeholder, ...props }) => {
         {label} {props.required && <span className='text-red-400'>*</span>}
       </label>
       <textarea
-        className='placeholder:capitalize w-full ring-1 ring-gray-200  resize-none h-40 p-4 text-sm outline-none text-[#54565B] dark:text-wdark-50'
+        className='placeholder:capitalize w-full ring-1 ring-gray-200 bg-transparent placeholder:text-base  resize-none h-40 p-4 text-sm outline-none text-[#54565B] dark:text-wdark-50'
         placeholder={placeholder}
         {...field}></textarea>
       {meta.error && meta.touched && (

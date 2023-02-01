@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { NavLink } from 'react-router-dom';
-import { FaSearch, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 import { MobileMenu } from '../MobileMenu';
 
@@ -42,8 +42,6 @@ export const Navbar = () => {
           <NavbarLink to='/projects' name='Projects' />
         </ul>
         <div className='search flex items-center gap-8'>
-          <FaSearch />
-
           <NavLink
             to='/contact'
             className='bg-bl-800 p-3 px-8 transition duration-300 active:scale-90 active:shadow-lg hover:shadow-lg whitespace-nowrap rounded-xl text-white'>
