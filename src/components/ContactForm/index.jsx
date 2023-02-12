@@ -47,7 +47,10 @@ export const ContactForm = () => {
             email: Yup.string().required('Email is required'),
             message: Yup.string().required('Please enter a message'),
           })}>
-          <Form className='gap-9 flex flex-col shadow-lg rounded-xl'>
+          <Form
+            className='gap-9 flex flex-col shadow-lg rounded-xl'
+            data-netlify='true'
+            netlify>
             <TextInput
               name='firstname'
               id='firstname'
