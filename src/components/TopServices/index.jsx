@@ -23,12 +23,12 @@ export const TopServices = () => {
             Learn More
           </Link>
         </div>
-        <div className='col__image'>
+        <div className='col__image !bg-bl-50 '>
           <img src={iphonemockup} alt='iphone 13 mockup' />
         </div>
       </div>
       <div className='col'>
-        <div className='col__image'>
+        <div className='col__image !bg-bl-50 '>
           <img src={macbookmockup} alt='macbook pro mockup' />
         </div>
         <div className='col__text pl-3r'>
