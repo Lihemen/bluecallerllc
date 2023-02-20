@@ -9,15 +9,20 @@ export const PrivacyPolicy = () => {
     <Opacity className='privacy__policy'>
       <PageHeader name='Privacy Policy' link='company/privacy-policy' />
 
-      <h3 className='text-center service__sec-title'>Data Processing</h3>
+      <h3 className='font-serif text-center service__sec-title'>
+        Data Processing
+      </h3>
       <h1 className='text-center service__title'>
         Privacy Policy for Bluecaller Integrated Services
       </h1>
       <p className='py-2r'>
         At Bluecaller, accessible from{' '}
-        <Link to='/' style={{ textDecoration: 'underline' }}>
-          https://bluecallerllc.com
-        </Link>
+        <a
+          href=' https://bluecallertech.com'
+          target='_blank'
+          style={{ textDecoration: 'underline' }}>
+          https://bluecallertech.com
+        </a>
         , one of our main priorities is the privacy of our visitors. This
         Privacy Policy document contains types of information that is collected
         and recorded by Bluecaller and how we use it.
@@ -40,14 +45,14 @@ export const PrivacyPolicy = () => {
         website.
       </p>
 
-      <h3 className='service__sec-title'>Consent</h3>
+      <h3 className='font-serif service__sec-title'>Consent</h3>
 
       <p className='pb-2r'>
         By using our website, you hereby consent to our Privacy Policy and agree
         to its terms.
       </p>
 
-      <h3 className='service__sec-title'>Information we collect</h3>
+      <h3 className='font-serif service__sec-title'>Information we collect</h3>
 
       <p className='pb-2r'>
         The personal information that you are asked to provide, and the reasons
@@ -66,7 +71,9 @@ export const PrivacyPolicy = () => {
         address, and telephone number.
       </p>
 
-      <h3 className='service__sec-title'>How we use your information</h3>
+      <h3 className='font-serif service__sec-title'>
+        How we use your information
+      </h3>
 
       <p>We use the information we collect in various ways, including to:</p>
 
@@ -87,7 +94,7 @@ export const PrivacyPolicy = () => {
         <li>Find and prevent fraud</li>
       </ul>
 
-      <h3 className='service__sec-title'>Log Files</h3>
+      <h3 className='font-serif service__sec-title'>Log Files</h3>
 
       <p className='pb-2r'>
         Bluecaller follows a standard procedure of using log files. These files
@@ -101,7 +108,7 @@ export const PrivacyPolicy = () => {
         the website, and gathering demographic information.
       </p>
 
-      <h3 className='service__sec-title'>Cookies and Web Beacons</h3>
+      <h3 className='font-serif service__sec-title'>Cookies and Web Beacons</h3>
 
       <p className='pb-2r'>
         Like any other website, Bluecaller uses 'cookies'. These cookies are
@@ -111,7 +118,9 @@ export const PrivacyPolicy = () => {
         content based on visitors' browser type and/or other information.
       </p>
 
-      <h3 className='service__sec-title'>Google DoubleClick DART Cookie</h3>
+      <h3 className='font-serif service__sec-title'>
+        Google DoubleClick DART Cookie
+      </h3>
 
       <p className='pb-2r'>
         Google is one of a third-party vendor on our site. It also uses cookies,
@@ -129,7 +138,7 @@ export const PrivacyPolicy = () => {
         </a>
       </p>
 
-      <h3 className='service__sec-title'>
+      <h3 className='font-serif service__sec-title'>
         Advertising Partners Privacy Policies
       </h3>
 
@@ -153,7 +162,9 @@ export const PrivacyPolicy = () => {
         are used by third-party advertisers.
       </p>
 
-      <h3 className='service__sec-title'>Third Party Privacy Policies</h3>
+      <h3 className='font-serif service__sec-title'>
+        Third Party Privacy Policies
+      </h3>
 
       <p className='pb-2r'>
         Bluecaller's Privacy Policy does not apply to other advertisers or
@@ -170,7 +181,7 @@ export const PrivacyPolicy = () => {
         websites.
       </p>
 
-      <h3 className='service__sec-title'>
+      <h3 className='font-serif service__sec-title'>
         CCPA Privacy Rights (Do Not Sell My Personal Information)
       </h3>
 
@@ -196,7 +207,9 @@ export const PrivacyPolicy = () => {
         like to exercise any of these rights, please contact us.
       </p>
 
-      <h3 className='service__sec-title'>GDPR Data Protection Rights</h3>
+      <h3 className='font-serif service__sec-title'>
+        GDPR Data Protection Rights
+      </h3>
 
       <p className='pb-2r'>
         We would like to make sure you are fully aware of all of your data
@@ -234,7 +247,7 @@ export const PrivacyPolicy = () => {
         like to exercise any of these rights, please contact us.
       </p>
 
-      <h3 className='service__sec-title'>Children's Information</h3>
+      <h3 className='font-serif service__sec-title'>Children's Information</h3>
 
       <p className='pb-2r'>
         Another part of our priority is adding protection for children while

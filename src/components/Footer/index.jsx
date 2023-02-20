@@ -47,8 +47,8 @@ export const Footer = () => {
             <h3>Contacts</h3>
             <ul>
               <li>
-                <a href='mailto:info@bluecallerllc.com'>
-                  info@bluecallerllc.com
+                <a href='mailto:info@bluecallertech.com'>
+                  info@bluecallertech.com
                 </a>
               </li>
               <li>
@@ -116,7 +116,7 @@ export const Footer = () => {
           </li>
           <li>
             <a
-              href='https://twitter.com/bluecallerllc'
+              href='https://twitter.com/bluecallertech'
               target='_blank'
               rel='noreferrer noopener'>
               <FaTwitter />
