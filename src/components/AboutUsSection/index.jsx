@@ -36,7 +36,7 @@ export const AboutUsSection = () => {
       </JackInTheBox>
       <div className='col'>
         <Slide direction='right' triggerOnce>
-          <h3>About Us</h3>
+          <h3 className='font-serif'>About Us</h3>
           <h1>We Create The Perfect Tech Experience</h1>
           <p></p>
 

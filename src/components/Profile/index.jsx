@@ -13,9 +13,9 @@ export const Profile = ({
   return (
     <div className='flex flex-col bg-bl-50 p-8 rounded-xl gap-6'>
       <img src={image} alt={name} className='rounded-full' />
-      <h3 className='capitalize'>{name}</h3>
-      <span className='uppercase'>{title}</span>
-      <ul className='flex justify-evenly child:text-xl child:flex child:rounded-full child:bg-bl-800 child:p-2 child:child:text-white'>
+      <h3 className='capitalize font-serif tracking-wider'>{name}</h3>
+      <span className='uppercase font-bold'>{title}</span>
+      <ul className='flex justify-evenly child:text-xl child:flex child:rounded-full child:bg-bl-800 child:p-2 child:child:text-white hover:child:scale-125 child:transition child:duration-300'>
         <li>
           <a
             href={`https://facebook.com/${facebook}`}

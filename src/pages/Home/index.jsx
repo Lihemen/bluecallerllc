@@ -5,6 +5,7 @@ import { CompletedProjects } from '../../components/CompletedProjects';
 import { OurServices } from '../../components/OurServices';
 import { AboutUsSection } from '../../components/AboutUsSection';
 import { TopServices } from '../../components/TopServices';
+import { JoinTheTeam } from '../../components/JoinUs';
 
 import Opacity from '../../motions/Opacity';
 
@@ -17,6 +18,7 @@ export const Home = () => {
       <OurServices />
       <AboutUsSection />
       <TopServices />
+      <JoinTheTeam />
     </Opacity>
   );
 };

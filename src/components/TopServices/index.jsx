@@ -11,7 +11,7 @@ export const TopServices = () => {
     <section className='top__services'>
       <div className='col'>
         <div className='col__text pr-3r'>
-          <h3>App Design</h3>
+          <h3 className='font-serif'>App Design</h3>
           <h1>We Always Create Innovation For You</h1>
           <p>
             Develop a unique and functional app that is user-friendly and easy
@@ -19,7 +19,7 @@ export const TopServices = () => {
           </p>
           <Link
             to='/services/app-development'
-            className='active:shadow-lg active:scale-90 transition duration-200 '>
+            className='active:shadow-lg active:scale-90 transition duration-200 !py-4 hover:bg-bl-600 '>
             Learn More
           </Link>
         </div>
@@ -32,7 +32,7 @@ export const TopServices = () => {
           <img src={macbookmockup} alt='macbook pro mockup' />
         </div>
         <div className='col__text pl-3r'>
-          <h3>Web Design</h3>
+          <h3 className='font-serif'>Web Design</h3>
           <h1>Just A Perfect Experience of Tech</h1>
           <p>
             Build a website that is responsive, fast, perfomant and generates
@@ -40,7 +40,7 @@ export const TopServices = () => {
           </p>
           <Link
             to='/services/web-development'
-            className='active:shadow-lg active:scale-90 transition duration-200 '>
+            className='active:shadow-lg active:scale-90 transition duration-200 !py-4 hover:bg-bl-600 '>
             Learn More
           </Link>
         </div>

@@ -13,7 +13,7 @@ export const TeamSection = () => {
         <Profile
           name='shima aga'
           image={profile}
-          title='founder &amp; CEO'
+          title='co-founder'
           facebook='shimaaga'
           linkedin='shimaaga'
           twitter='shimaaga'
@@ -21,7 +21,7 @@ export const TeamSection = () => {
         <Profile
           name='joseph obasi'
           image={profile}
-          title='chief operating officer'
+          title='co-founder'
           facebook='josephobasi'
           linkedin='josephobasi'
           twitter='obasi2020'
@@ -29,7 +29,7 @@ export const TeamSection = () => {
         <Profile
           name='Jamil Abubakar'
           image={profile}
-          title='innovation & development'
+          title='head of data'
           facebook='jamilabubakar'
           linkedin='jamilabubakar'
           twitter='jamilabubakar'
@@ -37,7 +37,7 @@ export const TeamSection = () => {
         <Profile
           name='madu victor'
           image={profile}
-          title='head - design & apps'
+          title='lead engineer'
           facebook='maduvictor'
           linkedin='maduvictor'
           twitter='maduvictor'

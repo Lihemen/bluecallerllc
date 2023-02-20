@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import "./pageheader.css";
+import './pageheader.css';
 
 export const PageHeader = ({ name, link, prev_link }) => {
   return (
-    <section className="single__page__header">
-      <h2>{name}</h2>
+    <section className='single__page__header'>
+      <h2 className='font-serif'>{name}</h2>
 
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to='/'>Home</Link>
         </li>
         {prev_link && (
           <li>
@@ -25,4 +25,3 @@ export const PageHeader = ({ name, link, prev_link }) => {
     </section>
   );
 };
-

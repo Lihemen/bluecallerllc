@@ -58,9 +58,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .service__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .service__sec-title {
+    font-size: 1.35rem;
   }
 }
+
 @media (max-width: 600px) {
   .services__grid {
     grid-template-columns: repeat(1, 1fr);

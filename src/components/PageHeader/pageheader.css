@@ -16,13 +16,15 @@
   justify-content: center;
   width: 100%;
   text-transform: uppercase;
+  text-align: center;
   padding-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .single__page__header ul li:not(:first-child) ::before {
   content: '\2022';
   color: var(--primary-color);
-  padding: 0 20px;
   font-weight: bold;
   display: inline-block;
   width: 1em;
