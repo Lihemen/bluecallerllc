@@ -1,0 +1,11 @@
+.padding-x {
+  @apply px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-44;
+}
+
+.padding-y {
+  @apply py-10 md:py-16 lg:py-32;
+}
+
+.section-title {
+  @apply text-center font-serif text-2xl text-bluecaller-400 uppercase;
+}

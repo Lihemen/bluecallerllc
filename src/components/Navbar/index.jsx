@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
 import { MobileMenu } from '../MobileMenu';
@@ -12,13 +11,10 @@ const NavbarLink = (props) => {
     <li>
       <NavLink
         to={props.to}
-        style={({ isActive }) =>
-          isActive
-            ? {
-                color: 'var(--primary-color)',
-                textDecoration: 'underline',
-              }
-            : undefined
+        className={({ isActive }) =>
+          `uppercase text-sm tracking-widest ${
+            isActive && 'text-bluecaller-100'
+          }`
         }>
         {props.name}
       </NavLink>
@@ -30,25 +26,33 @@ export const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <nav className='navbar'>
-        <div className='logo'>
-          <img src={logo} alt='Logo' width={40} height={40} />
-          <NavLink to='/'>BlueCaller</NavLink>
-        </div>
-        <ul className='nav__links hover:child:underline child:underline-offset-8'>
-          <NavbarLink to='/' name='Home' />
-          <NavbarLink to='/about' name='About' />
-          <NavbarLink to='/services' name='Services' />
-          <NavbarLink to='/projects' name='Projects' />
+      <nav className='padding-x bg-bluecaller-900 py-4 text-white justify-between flex items-center'>
+        <Link to='/' className='flex gap-2 items-center'>
+          <img src={logo} alt='Bluecaller' className='w-16' />{' '}
+          <h3 className='text-3xl uppercase font-serif font-bold'>Blucaller</h3>
+        </Link>
+        <ul className='lg:flex items-center gap-12 hidden'>
+          <li>
+            <NavbarLink to='/' name='Home' />
+          </li>
+          <li>
+            <NavbarLink to='/about' name='About Us' />
+          </li>
+          <li>
+            <NavbarLink to='/services' name='Our Services' />
+          </li>
+          <li>
+            <NavbarLink to='/contact' name='Contact' />
+          </li>
         </ul>
-        <div className='search flex items-center gap-8'>
-          <NavLink
-            to='/contact'
-            className='bg-bl-800 p-3 px-8 transition duration-300 active:scale-90 active:shadow-lg hover:shadow-lg whitespace-nowrap rounded-xl text-white'>
-            Contact
-          </NavLink>
-        </div>
-        <FaBars className='menu__btn' onClick={() => setShow(true)} />
+        <Link
+          to='/services'
+          className='p-4 text-sm uppercase backdrop-blur-sm bg-white/30 rounded-3xl hidden lg:flex '>
+          Get Started{' '}
+        </Link>
+        <button onClick={() => setShow(true)} className='lg:hidden'>
+          <FaBars size={32} />
+        </button>
       </nav>
       <MobileMenu show={show} close={() => setShow(false)} />
     </>

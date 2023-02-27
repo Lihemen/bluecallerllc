@@ -1,12 +1,14 @@
 import React from 'react';
 
-import './clients.css';
-
 export const Clients = () => {
   return (
-    <section className='clients__card'>
-      <h3 className='font-serif'>Our Clients</h3>
-      <h1>Trusted by 5,000+ customers around the world</h1>
+    <section className='flex flex-col gap-6 padding-x padding-y'>
+      <h3 className='font-serif text-2xl text-bluecaller-400 uppercase '>
+        Our Clients
+      </h3>
+      <h1 className='lg:text-5xl'>
+        Trusted by 5,000+ customers around the world
+      </h1>
     </section>
   );
 };

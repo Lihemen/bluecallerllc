@@ -14,7 +14,7 @@ import './footer.css';
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className='padding-x padding-y bg-bluecaller-900 text-white'>
       <div className='level__1'>
         <h3>LET'S WORK</h3>
         <div>
@@ -25,7 +25,7 @@ export const Footer = () => {
             </Link>
             <Link
               to='/contact'
-              className='flex items-center bg-bl-600 text-white p-3 px-5 gap-4 rounded-xl'>
+              className='flex items-center bg-bluecaller-600 text-white p-3 px-5 gap-4 rounded-xl'>
               <FaPhoneAlt /> Contact Us
             </Link>
           </div>
@@ -45,7 +45,7 @@ export const Footer = () => {
         <div className='links__grid'>
           <div className='col'>
             <h3>Contacts</h3>
-            <ul>
+            <ul className='text-bluecaller-900'>
               <li>
                 <a href='mailto:info@bluecallertech.com'>
                   info@bluecallertech.com
@@ -69,9 +69,6 @@ export const Footer = () => {
                 <Link to='/about'>About</Link>
               </li>
               <li>
-                <Link to='/team'>Team</Link>
-              </li>
-              <li>
                 <Link to='/services'>Services</Link>
               </li>
             </ul>
@@ -86,7 +83,7 @@ export const Footer = () => {
                 <Link to='/company/privacy-policy'>Policy</Link>
               </li>
               <li>
-                <Link to='/company/careers'>Career</Link>
+                <Link to='/company/careers'>Careers</Link>
               </li>
               <li>
                 <Link to='/contact'>Contact</Link>
@@ -97,7 +94,7 @@ export const Footer = () => {
       </div>
       <div className='level__3'>
         <p>Copyright &copy; {new Date().getFullYear()} BlueCaller</p>
-        <ul className='flex gap-8 child:bg-white child:flex child:items-center child:rounded-full child:p-2 text-xl'>
+        <ul className='flex gap-8 child:flex child:items-center child:rounded-full child:p-2 text-3xl'>
           <li>
             <a
               href='https://facebook.com'

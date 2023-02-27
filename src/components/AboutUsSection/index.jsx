@@ -16,17 +16,17 @@ import './aboutussection.css';
 
 export const AboutUsSection = () => {
   return (
-    <section className='about__hero'>
+    <section className='padding-x padding-y about__hero'>
       <JackInTheBox triggerOnce delay={200}>
-        <div className='image__container'>
+        <div className='image__container text-white'>
           <img src={teamtogether} alt='team holding hands together' />
-          <div className='card rounded-xl bg-bl-800 bg-opacity-90'>
+          <div className='card rounded-xl bg-bluecaller-800 bg-opacity-90'>
             <p>
               <span>5,000+</span> <IoStatsChartOutline />{' '}
             </p>
             <p>Trusted customers all over the world.</p>
 
-            <div className='icons flex'>
+            <div className='icons flex pt-4'>
               <img src={testimonial1} alt='person1' />
               <img src={testimonial2} alt='person2' />
               <img src={testimonial3} alt='person3' />
@@ -42,7 +42,7 @@ export const AboutUsSection = () => {
 
           <ul>
             <li>
-              <span className='icon'>
+              <span className='text-bluecaller-50 w-16 h-16 bg-bluecaller-900 rounded-full flex items-center justify-center mr-8 text-4xl p-3'>
                 <IoDiamondOutline />
               </span>
               <div>
@@ -57,7 +57,7 @@ export const AboutUsSection = () => {
               </div>
             </li>
             <li>
-              <span className='icon'>
+              <span className='text-bluecaller-50 w-16 h-16 bg-bluecaller-900 rounded-full flex items-center justify-center mr-8 text-4xl p-3'>
                 <IoFlagOutline />
               </span>
               <div>

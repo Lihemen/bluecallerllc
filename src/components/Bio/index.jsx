@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Bio = () => {
   return (
-    <div className='flex flex-col gap-8'>
+    <div className='flex flex-col gap-8 padding-x padding-y'>
       <p className='text-lg leading-10'>
         Bluecaller is an ICT Consulting Firm that employs technology to solve
         real-life process-based problems faced by organizations. We are

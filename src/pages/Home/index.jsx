@@ -17,8 +17,8 @@ export const Home = () => {
       <CompletedProjects />
       <OurServices />
       <AboutUsSection />
-      <TopServices />
       <JoinTheTeam />
+      <TopServices />
     </Opacity>
   );
 };

@@ -15,7 +15,7 @@ export const SingleService = ({
   secondary_summary,
 }) => {
   return (
-    <div className='single__service-section leading-10 mb-32'>
+    <div className='padding-x padding-y single__service-section leading-10 mb-32'>
       <div className='row'>
         <div className='col-md-8 leading-10'>
           <Slide direction='up' triggerOnce>
@@ -26,7 +26,7 @@ export const SingleService = ({
           </Fade>
         </div>
         <div className='col-md-4'>
-          <img src={image} alt={title} className='object-scale-down' />
+          <img src={image} alt={title} className='object-cover h-[400px]' />
         </div>
       </div>
       <div className='row'>

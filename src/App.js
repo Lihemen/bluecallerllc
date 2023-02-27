@@ -25,6 +25,8 @@ import { ProductDesign } from './pages/Services/ProductDesign';
 import { MobileDev } from './pages/Services/MobileDev';
 import { DigitalMarketing } from './pages/Services/DigitalMarketing';
 
+import './App.css';
+
 function App() {
   const { pathname, search } = useLocation();
   useEffect(() => {

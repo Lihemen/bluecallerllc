@@ -1,10 +1,3 @@
-footer {
-  background-color: var(--footer-background);
-  margin: 0 -12rem;
-  margin-top: 3rem;
-  padding: 4rem 12rem;
-  color: #b0b1b3;
-}
 .company > h3 {
   display: flex;
   align-items: center;
@@ -84,24 +77,11 @@ footer .level__1 h3 {
 .col a {
   color: #b0b1b3;
 }
+
 .social__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.social__links a {
-  margin-left: 1rem;
-  text-align: center;
-  border: 1px solid #b0b1b3;
-  border-radius: 100%;
-  padding: 3px 5px;
-  font-size: 14px;
-}
-
-.social__links a:hover {
-  background-color: var(--primary-color);
-  color: #000;
-  transition: all 0.15s ease;
 }
 
 @media (max-width: 921px) {
@@ -122,10 +102,6 @@ footer .level__1 h3 {
     gap: 1rem;
   }
 
-  footer {
-    margin: 0 -2rem;
-    padding: 5rem 2rem;
-  }
   .links__grid {
     grid-template-columns: repeat(1, 1fr);
     text-align: left;

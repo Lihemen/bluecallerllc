@@ -1,29 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-:root {
-  --primary-color: #7e6bb3;
-  --secondary-color: #2a243c;
-  --text-color: #111;
-  --footer-background: #2a243c;
-  --body: #fafafa;
-  --light-color: #43395f;
-  --margin: -4rem -12rem;
-  --padding: 2rem 12rem;
-}
-
-@media (max-width: 921px) {
-  :root {
-    --margin: -2rem;
-    --padding: 1rem 2rem;
-  }
-}
-
-::selection {
-  background-color: #111;
-  color: #fff;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -31,123 +8,8 @@ html {
 html,
 body {
   height: 100%;
-  /* font-size: 14px; */
-}
-
-body {
-  font-family: 'Open Sans', 'Helvetica Neue', 'Roboto', sans-serif;
-  background-color: var(--body);
-  color: var(--light-color);
-  padding: 4rem 12rem;
-  line-height: 2;
-}
-a {
-  text-decoration: none;
-  color: var(--light-color);
-  text-underline-offset: 5px;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-}
-
-@media (max-width: 921px) {
-  body {
-    padding: 2rem;
-  }
-}
-
-/* RIGHT AND LEFT PADDINGS */
-.px-1r {
-  padding: 0 1rem;
-}
-.px-2r {
-  padding: 0 2rem;
-}
-.px-3r {
-  padding: 0 3rem;
-}
-.px-4r {
-  padding: 0 4rem;
-}
-/* TOP AND BOTTOM PADDINGS */
-.py-1r {
-  padding: 1rem 0;
-}
-.py-2r {
-  padding: 2rem 0;
-}
-.py-3r {
-  padding: 3rem 0;
-}
-.py-4r {
-  padding: 4rem 0;
-}
-/* TOP PADDINGS */
-.pt-1r {
-  padding-top: 1rem;
-}
-.pt-2r {
-  padding-top: 2rem;
-}
-.pt-3r {
-  padding-top: 3rem;
-}
-.pt-4r {
-  padding-top: 4rem;
-}
-/* BOTTOM PADDINGS */
-.pb-1r {
-  padding-bottom: 1rem;
-}
-.pb-2r {
-  padding-bottom: 2rem;
-}
-.pb-3r {
-  padding-bottom: 3rem;
-}
-.pb-4r {
-  padding-bottom: 4rem;
-}
-/* RIGHT PADDINGS */
-.pr-1r {
-  padding-right: 1rem;
-}
-.pr-2r {
-  padding-right: 2rem;
-}
-.pr-3r {
-  padding-right: 3rem;
-}
-.pr-4r {
-  padding-right: 4rem;
-}
-/* LEFT PADDINGS */
-.pl-1r {
-  padding-left: 1rem;
-}
-.pl-2r {
-  padding-left: 2rem;
-}
-.pl-3r {
-  padding-left: 3rem;
-}
-.pl-4r {
-  padding-left: 4rem;
-}
-
-.text-danger {
-  color: rgb(235, 83, 83);
+  font-size: 14px;
+  overflow-x: hidden;
 }
 
 .not__found {
@@ -170,7 +32,6 @@ h6 {
 }
 
 .not__found p {
-  color: #b0b1b3;
   line-height: 2;
 }
 

@@ -2,14 +2,12 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import './pageheader.css';
-
 export const PageHeader = ({ name, link, prev_link }) => {
   return (
-    <section className='single__page__header'>
-      <h2 className='font-serif'>{name}</h2>
+    <section className='bg-bluecaller-900 padding-x padding-y text-white text-center space-y-10 min-h-[50vh] flex items-center flex-col justify-center'>
+      <h2 className='font-serif text-6xl capitalize'>{name}</h2>
 
-      <ul>
+      <ul className='flex list-inside list-disc items-center justify-center gap-10 flex-wrap capitalize'>
         <li>
           <Link to='/'>Home</Link>
         </li>

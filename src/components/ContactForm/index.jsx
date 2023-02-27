@@ -12,9 +12,11 @@ import './contactform.css';
 export const ContactForm = () => {
   return (
     <Slide triggerOnce direction='left' cascade>
-      <section className='contact__form'>
+      <section className='contact__form padding-x bg-bluecaller-50 padding-y'>
         <article className='support'>
-          <h3 className='service__sec-title'>Contact</h3>
+          <h3 className='font-serif text-2xl text-bluecaller-400 uppercase'>
+            Contact
+          </h3>
           <h1 className='service__title'>Ask us Anything</h1>
           <p>We provide excellent consulting services to our clients.</p>
           <div className='support__items'>
@@ -26,7 +28,7 @@ export const ContactForm = () => {
               <p>Round the clock support.</p>
             </div>
             <div className='col'>
-              <span className='icon'>
+              <span className='icon text-white'>
                 <FaRegClock />
               </span>
               <h3>Realtime Support</h3>
@@ -48,7 +50,7 @@ export const ContactForm = () => {
             message: Yup.string().required('Please enter a message'),
           })}>
           <Form
-            className='gap-9 flex flex-col shadow-lg rounded-xl'
+            className='gap-9 flex flex-col shadow-lg rounded-xl bg-white'
             data-netlify='true'
             netlify>
             <TextInput
@@ -73,7 +75,7 @@ export const ContactForm = () => {
             />
             <TextArea name='message' id='message' placeholder='Your message' />
 
-            <button className='btn' type='submit'>
+            <button className='bg-bluecaller-900 p-4 text-white' type='submit'>
               Send Message
             </button>
           </Form>

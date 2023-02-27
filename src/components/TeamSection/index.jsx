@@ -2,14 +2,13 @@ import React from 'react';
 import profile from '../../assets/profile.webp';
 
 import { Profile } from '../Profile';
-import './teamsection.css';
 
 export const TeamSection = () => {
   return (
-    <div className='team__section'>
-      <h3 className='service__sec-title'>Our Team</h3>
-      <h1 className='service__title'>Meet Our Professionals</h1>
-      <div className='team__grid'>
+    <div className='padding-x '>
+      <h3 className='section-title'>Our Team</h3>
+      <h1 className='text-center'>Meet Our Professionals</h1>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 padding-y text-center'>
         <Profile
           name='shima aga'
           image={profile}
@@ -35,12 +34,12 @@ export const TeamSection = () => {
           twitter='jamilabubakar'
         />
         <Profile
-          name='madu victor'
+          name='david ochouma'
           image={profile}
           title='lead engineer'
-          facebook='maduvictor'
-          linkedin='maduvictor'
-          twitter='maduvictor'
+          facebook='davidochouma'
+          linkedin='davidochouma'
+          twitter='davidochouma'
         />
       </div>
     </div>

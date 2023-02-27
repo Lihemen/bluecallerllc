@@ -16,14 +16,18 @@ export const MobileMenu = ({ show, close }) => {
   }
 
   return (
-    <aside className={`mobile__menu ${show ? 'active' : undefined}`}>
-      <FaTimes id='close' onClick={close} />
-      <ul>
-        <MobileLink to='/' label='Home' />
-        <MobileLink to='/about' label='About Us' />
-        <MobileLink to='/services' label='Our Services' />
-        <MobileLink to='/contact' label='Contact Us' />
-      </ul>
+    <aside
+      className={`mobile__menu ${show ? 'active' : undefined}`}
+      onClick={close}>
+      <nav onClick={(e) => e.stopPropagation()}>
+        <FaTimes id='close' onClick={close} />
+        <ul>
+          <MobileLink to='/' label='Home' />
+          <MobileLink to='/about' label='About Us' />
+          <MobileLink to='/services' label='Our Services' />
+          <MobileLink to='/contact' label='Contact Us' />
+        </ul>
+      </nav>
     </aside>
   );
 };

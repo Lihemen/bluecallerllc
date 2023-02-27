@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bl: {
+        bluecaller: {
           50: '#F6F4FD',
           100: '#E5DDFA',
           200: '#C2B1F3',
@@ -15,8 +15,9 @@ module.exports = {
           600: '#6D5D9B',
           700: '#544877',
           800: '#322B47',
-          900: '#191524',
+          900: '#130b32',
         },
+        dark: {},
       },
     },
   },

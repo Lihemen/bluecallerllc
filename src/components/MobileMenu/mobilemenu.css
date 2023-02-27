@@ -1,6 +1,22 @@
 .mobile__menu {
+  width: 100vw;
   display: block;
-  background-color: rgb(49, 48, 48);
+  min-height: 100vh;
+  z-index: 1000001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.05s ease-in;
+}
+.mobile__menu.active {
+  transform: translateX(0%);
+}
+
+.mobile__menu nav {
+  display: block;
+  background-color: rgb(20, 20, 20);
   color: #fff;
   position: fixed;
   left: 0;
@@ -14,7 +30,7 @@
   transform: translateX(-100%);
 }
 
-.mobile__menu.active {
+.mobile__menu.active nav {
   transform: translateX(0%);
 }
 
@@ -36,4 +52,3 @@
 .mobile__menu a:active {
   color: var(--primary-color);
 }
-

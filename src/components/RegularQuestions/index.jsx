@@ -5,8 +5,6 @@ import { Question } from '../Question';
 export const RegularQuestions = () => {
   return (
     <>
-      <h3 className='service__sec-title pt-4r'>FAQs</h3>
-      <h1 className='service__title'>Regular Questions</h1>
       <Accordion className='grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-10  mb-32'>
         <Question
           question='01. Where is your office location?'

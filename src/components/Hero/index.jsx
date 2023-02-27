@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
 import Typed from 'typed.js';
 
-import heroimg1 from '../../assets/heroimg1.webp';
-import heroimg2 from '../../assets/heroimg2.webp';
-
-import './hero.css';
+import hero from '../../assets/hero.jpg';
 
 export const Hero = () => {
   const el = useRef(null);
@@ -14,11 +11,11 @@ export const Hero = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        'The Technology Works for Tomorrow',
-        'The Technology to Innovate',
-        'Bluecaller Integrated Services. Quality Assured',
+        'The Technology Works for Tomorrow_',
+        'The Technology to Innovate_',
+        'Bluecaller Integrated Services. Quality Assured_',
       ],
-      startDelay: 300,
+      startDelay: 0,
       typeSpeed: 50,
       backSpeed: 100,
       backDelay: 1000,
@@ -30,24 +27,25 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className='hero'>
-      <Slide triggerOnce direction='up'>
-        <div className='hero__text'>
-          <h4 translate='no' className='company__name'>
-            BLUECALLER INTEGRATED SERVICES
-          </h4>
-          <span className='hero__title relative' ref={el}></span>
-          <p className='!text-base lg:!text-xl !leading-8 xl:!leading-[60px]'>
-            Consulting. Integration. Innovation. Bluecaller is positioned to
-            delivering the ideal solutions to scale your business and reach out
-            to new customers.
+    <section
+      className='h-[calc(100vh-80px)] w-full bg-no-repeat bg-cover bg-center xl:bg-top text-white padding-x'
+      style={{ backgroundImage: `url('${hero}')` }}>
+      <Slide
+        triggerOnce
+        direction='down'
+        className='h-full w-full flex items-center justify-center text-center'>
+        <div className='flex flex-col gap-10 items-center h-full justify-center text-center w-full pb-20'>
+          <p className='uppercase text-white/90 tracking-wider text-xl'>
+            we make innovation creation easy
           </p>
-          <Link to='/services'>Learn More</Link>
-        </div>
-
-        <div className='hero__images'>
-          <img src={heroimg1} alt='team meeting around a computer' />
-          <img src={heroimg2} alt='developer pointing to a laptop' />
+          <span
+            className='text-5xl lg:text-6xl xl:text-[8rem] xl:leading-[120px] relative xl:w-4/5 font-serif'
+            ref={el}></span>
+          <Link
+            to='/services'
+            className='p-4 px-6 rounded-3xl bg-bluecaller-500 text-white tracking-widest uppercase'>
+            Learn More
+          </Link>
         </div>
       </Slide>
     </section>
