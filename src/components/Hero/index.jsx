@@ -39,7 +39,7 @@ export const Hero = () => {
             we make innovation creation easy
           </p>
           <span
-            className='text-5xl lg:text-6xl xl:text-[8rem] xl:leading-[120px] relative xl:w-4/5 font-serif'
+            className='text-4xl lg:text-6xl xl:text-[8rem] xl:leading-[120px] relative xl:w-4/5 font-serif'
             ref={el}></span>
           <Link
             to='/services'

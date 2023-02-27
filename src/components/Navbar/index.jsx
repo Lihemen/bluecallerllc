@@ -29,7 +29,9 @@ export const Navbar = () => {
       <nav className='padding-x bg-bluecaller-900 py-4 text-white justify-between flex items-center'>
         <Link to='/' className='flex gap-2 items-center'>
           <img src={logo} alt='Bluecaller' className='w-16' />{' '}
-          <h3 className='text-3xl uppercase font-serif font-bold'>Blucaller</h3>
+          <h3 className='text-3xl uppercase font-serif font-bold'>
+            Bluecaller
+          </h3>
         </Link>
         <ul className='lg:flex items-center gap-12 hidden'>
           <li>
