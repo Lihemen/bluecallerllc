@@ -1,5 +1,5 @@
 .top__services {
-  padding: 3rem 0;
+  padding: 3rem 0 8rem 0;
 }
 
 .top__services .col {
@@ -29,7 +29,6 @@
   color: white;
   text-transform: uppercase;
   cursor: pointer !important;
-  border-radius: 5px;
 }
 .col__image {
   flex: 1;
@@ -38,10 +37,9 @@
   background-color: #57575d;
   padding: 2rem 4rem;
   margin-right: 2rem;
-  border-radius: 5px;
 }
 .col__image img {
-  width: 90%;
+  width: 100%;
 }
 
 @media (max-width: 900px) {

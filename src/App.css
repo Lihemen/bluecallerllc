@@ -7,5 +7,9 @@
 }
 
 .section-title {
-  @apply text-center font-serif text-2xl text-bluecaller-400 uppercase;
+  @apply text-center font-serif text-2xl text-bluecaller-400 uppercase font-semibold;
+}
+
+h1 {
+  font-weight: 300;
 }

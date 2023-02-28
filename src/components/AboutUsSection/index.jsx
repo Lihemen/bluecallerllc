@@ -5,6 +5,7 @@ import {
   IoFlagOutline,
   IoStatsChartOutline,
 } from 'react-icons/io5';
+import { FaHands } from 'react-icons/fa';
 
 import { JackInTheBox, Slide } from 'react-awesome-reveal';
 
@@ -19,7 +20,11 @@ export const AboutUsSection = () => {
     <section className='padding-x padding-y about__hero'>
       <JackInTheBox triggerOnce delay={200}>
         <div className='image__container text-white'>
-          <img src={teamtogether} alt='team holding hands together' />
+          <img
+            src={teamtogether}
+            alt='team holding hands together'
+            className='rounded-xl'
+          />
           <div className='card rounded-xl bg-bluecaller-800 bg-opacity-90'>
             <p>
               <span>5,000+</span> <IoStatsChartOutline />{' '}
@@ -36,7 +41,9 @@ export const AboutUsSection = () => {
       </JackInTheBox>
       <div className='col'>
         <Slide direction='right' triggerOnce>
-          <h3 className='font-serif'>About Us</h3>
+          <h3 className='font-serif !font-semibold !text-bluecaller-400'>
+            About Us
+          </h3>
           <h1>We Create The Perfect Tech Experience</h1>
           <p></p>
 
@@ -67,6 +74,24 @@ export const AboutUsSection = () => {
                   clients by responsibly providing software services that enable
                   growth and business development by creating new ways to
                   connect with your customers.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span className='text-bluecaller-50 w-16 h-16 bg-bluecaller-900 rounded-full flex items-center justify-center mr-8 text-4xl p-3'>
+                <FaHands />
+              </span>
+              <div>
+                <h4>Our Values</h4>
+                <p>
+                  We hold ourselves to the highest standards of excellence and
+                  strive to exceed expectations in all areas of our work. We are
+                  committed to delivering high-quality results on time, every
+                  time. We encourage our team members to bring their unique
+                  perspectives and ideas to the table, and we celebrate the
+                  diversity that makes us stronger as a team. Together, these
+                  values guide our actions and shape our culture as we work
+                  towards our shared goals.
                 </p>
               </div>
             </li>

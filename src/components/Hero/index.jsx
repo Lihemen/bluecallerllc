@@ -18,7 +18,7 @@ export const Hero = () => {
       startDelay: 0,
       typeSpeed: 50,
       backSpeed: 100,
-      backDelay: 1000,
+      backDelay: 3000,
       showCursor: false,
       loop: true,
     });
@@ -39,7 +39,7 @@ export const Hero = () => {
             we make innovation creation easy
           </p>
           <span
-            className='text-4xl lg:text-6xl xl:text-[8rem] xl:leading-[120px] relative xl:w-4/5 font-serif'
+            className='text-4xl lg:text-6xl xl:text-[7rem] xl:leading-[120px] relative xl:w-4/5 font-serif'
             ref={el}></span>
           <Link
             to='/services'
