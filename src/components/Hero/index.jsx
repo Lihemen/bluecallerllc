@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Slide } from 'react-awesome-reveal';
 import Typed from 'typed.js';
 
-import hero from '../../assets/hero.jpg';
+import hero from '../../assets/hero.webp';
 
 export const Hero = () => {
   const el = useRef(null);
