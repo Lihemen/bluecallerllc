@@ -1,7 +1,7 @@
-import React from "react";
-import GoogleMapReact from "google-map-react";
-
 import "./map.css";
+
+import GoogleMapReact from "google-map-react";
+import React from "react";
 
 const Marker = (props) => {
   const { color, name } = props;
@@ -36,11 +36,10 @@ export const LocationMap = () => {
   return (
     <div className="map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_API_KEY }}
+        bootstrapURLKeys={{ key: import.meta.env.REACT_APP_GOOGLE_API_KEY }}
         defaultCenter={center}
         defaultZoom={18}
-        options={getMapOptions}
-      >
+        options={getMapOptions}>
         <Marker
           lat={center.lat}
           lng={center.lng}
@@ -51,4 +50,3 @@ export const LocationMap = () => {
     </div>
   );
 };
-

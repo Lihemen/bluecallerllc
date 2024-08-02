@@ -1,30 +1,33 @@
-import React from 'react';
-import { PageHeader } from '../../../components/PageHeader';
+import React from "react";
 
-import { useTitle } from '../../../hooks/useTitle';
-import { TopQuestions } from '../../../components/TopQuestions';
-import { RegularQuestions } from '../../../components/RegularQuestions';
-
-import { ContactForm } from '../../../components/ContactForm';
-
-import Opacity from '../../../motions/Opacity';
+import { ContactForm } from "../../../components/ContactForm";
+import { PageHeader } from "../../../components/PageHeader";
+import { RegularQuestions } from "../../../components/RegularQuestions";
+import { TopQuestions } from "../../../components/TopQuestions";
+import { useTitle } from "../../../hooks/useTitle";
+import { Opacity } from "../../../motions/Opacity";
 
 export const FAQs = () => {
-  useTitle('Frequently Asked Questions');
+  useTitle("Frequently Asked Questions");
 
   return (
-    <Opacity>
-      <PageHeader name='FAQs Page' link='company/faqs' />
-      <section className='faqs'>
-        <div className='padding-x padding-y'>
-          <div className='space-y-8'>
-            <TopQuestions />
-            <RegularQuestions />
+    <>
+      <PageHeader
+        name="FAQs Page"
+        link="company/faqs"
+      />
+      <Opacity>
+        <section className="faqs">
+          <div className="container padding-y">
+            <div className="space-y-8">
+              <TopQuestions />
+              <RegularQuestions />
+            </div>
           </div>
-        </div>
 
-        <ContactForm />
-      </section>
-    </Opacity>
+          <ContactForm />
+        </section>
+      </Opacity>
+    </>
   );
 };

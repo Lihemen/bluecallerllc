@@ -1,45 +1,48 @@
-import React from 'react';
-import profile from '../../assets/profile.webp';
+import React from "react";
 
-import { Profile } from '../Profile';
+import ceo from "../../assets/ceo.jpeg";
+import coo from "../../assets/coo.jpeg";
+import headofdata from "../../assets/headofdata.jpeg";
+import leadengineer from "../../assets/leadengineer.jpg";
+import { Profile } from "../Profile";
 
 export const TeamSection = () => {
   return (
-    <div className='padding-x '>
-      <h3 className='section-title'>Our Team</h3>
-      <h1 className='text-center'>Meet Our Professionals</h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 padding-y text-center'>
+    <div className="">
+      <h3 className="section-title">Our Team</h3>
+      <h1 className="text-center">Meet Our Professionals</h1>
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 padding-y text-center">
         <Profile
-          name='shima aga'
-          image={profile}
-          title='co-founder'
-          facebook='shimaaga'
-          linkedin='shimaaga'
-          twitter='shimaaga'
+          name="shima aga"
+          image={ceo}
+          title="CEO / co-founder"
+          facebook="#"
+          linkedin="#"
+          twitter="#"
         />
         <Profile
-          name='joseph obasi'
-          image={profile}
-          title='co-founder'
-          facebook='josephobasi'
-          linkedin='josephobasi'
-          twitter='obasi2020'
+          name="joseph obasi"
+          image={coo}
+          title="coo / co-founder"
+          facebook="#"
+          linkedin="#"
+          twitter="#"
         />
         <Profile
-          name='Jamil Abubakar'
-          image={profile}
-          title='head of data'
-          facebook='jamilabubakar'
-          linkedin='jamilabubakar'
-          twitter='jamilabubakar'
+          name="Iwenjiora Chukwuma"
+          image={headofdata}
+          title="head of data"
+          facebook="#"
+          linkedin="#"
+          twitter="#"
         />
         <Profile
-          name='david ochouma'
-          image={profile}
-          title='lead engineer'
-          facebook='davidochouma'
-          linkedin='davidochouma'
-          twitter='davidochouma'
+          name="Hemense Lan"
+          image={leadengineer}
+          title="lead engineer"
+          facebook="MrHilz"
+          linkedin="hemense-lan"
+          twitter="lih_codes"
         />
       </div>
     </div>

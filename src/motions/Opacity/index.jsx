@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import React from "react";
 
-const Opacity = ({ className, duration = 0.5, children }) => {
+export const Opacity = ({ className, duration = 0.5, children }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,5 +13,3 @@ const Opacity = ({ className, duration = 0.5, children }) => {
     </motion.div>
   );
 };
-
-export default Opacity;
